@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SaveWise Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to SaveWise</h1>
+    <h2>Track your budget</h2>
+    <form id="budgetForm">
+      <input type="text" id="description" placeholder="Description" required/>
+      <input type="number" id="amount" placeholder="Amount" required/>
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit" class="green">Add</button>
+    </form>
+    <h3>Summary</h3>
+    <p id="summary">Balance: $0</p>
+    <button id="adviceButton" class="purple">Get Budget Advice</button>
+    <button id="logout" class="red">Logout</button>
+    <ul id="history"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
